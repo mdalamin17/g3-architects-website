@@ -99,6 +99,71 @@ main {
   font-size: 1rem;
   font-weight: 400px;
 }
+.facts h3 {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700px;
+}
+.facts p {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400px;
+  width: 542px;
+}
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 30px 30px;
+}
+.facts-card-container .card-stats {
+  color: #424242;
+  font-size: 45px;
+  font-weight: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.facts-card-container .card-title {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600px;
+  margin-top: 5px;
+}
+.sponsore{
+  text-align: center;
+}
+.sponsore-title {
+  background-color: #ffffff;
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700px;
+}
+.sponser-description {
+  color: #727272;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400px;
+}
+.sponsors-img-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+.sponsors-img-container img{
+  width: 165px;
+}
+footer{
+  color:#424242;
+text-align: center;
+font-size: 20px;
+font-weight: 400px;
+}
 
 /*responsive media queries*/
 /*যেখানে display grid করা হয় ঠিক সেখানেই media queary /responsive apply করতে হয় */
@@ -108,15 +173,20 @@ main {
     padding: 20px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .facts-card-container , .sponsors-img-container {
     flex-direction: column;
   }
   .teams-img {
     grid-template-columns: 1fr;
   }
-  .teams-content {
+  .teams-content,
+  .facts-card-container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .facts-card-container {
+    gap: 20px;
   }
 }
 /*medium devices*/
@@ -125,7 +195,7 @@ main {
     padding: 50px;
   }
   nav,
-  .teams-container {
+  .teams-container , .sponsors-img-container{
     flex-direction: column;
   }
 }
